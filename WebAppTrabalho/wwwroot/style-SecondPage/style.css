@@ -1,0 +1,102 @@
+.box-name, #img, #box-mensagem{
+    transition: 1s;
+}
+
+@font-face {
+    font-family: dig;
+    src: url('font/DS-DIGIT.TTF');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(107, 115, 122);
+}
+
+section {
+    padding: 5%;
+    width: 45%;
+    height: 50%;
+    background-color: antiquewhite;
+    margin: 25%;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 10px 20px 30px black;
+}
+
+section div {
+    width: auto;
+    height: auto;
+}
+
+.box-name {
+    font-weight: bold;
+}
+
+.box-contem-relogio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 15px 0;
+}
+
+.box-relogio {
+    width: 150px;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: ghostwhite;
+    padding: 3px;
+    border: 2px solid rgb(65, 64, 64);
+    border-radius: 5px;
+    font-family: dig;
+}
+
+#img:not(:hover) {
+    outline: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#img:hover {
+    outline: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+#box-mensagem {
+    font-size: 17pt;
+    font-weight: bolder;
+}
+
+@media (min-width: 350px) {
+    section {
+        margin: 15% 25% 0 25%;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        margin: 2% 25% 0 25%;
+        padding: 2%
+    }
+
+    .box-name {
+        font-size: 17pt;
+    }
+
+    #img:not(:hover) {
+        outline: none;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    #img:hover {
+        outline: none;
+        width: 300px;
+        height: 300px;
+        border-radius: 10%;
+    }
+}

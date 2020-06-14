@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="~/style-SecondPage/style.css">
+    <link rel="stylesheet" href="~/style-SecondPage/font/DS-DIGIT.TTF">
+    <title>SecondPage</title>
+</head>
+
+<body>
+    <section>
+        <div class="box-name">
+            <p>Olá, @ViewData["Nome"]!</p>
+        </div>
+        <br />
+        <div class="box-contem-relogio">
+            <div class="box-relogio">
+                <span id="horas">00</span>:
+                <span id="minutos">00</span>:
+                <span id="segundos">00</span>
+            </div>
+        </div>
+        <br />
+        <div>
+            <image id="img" src="~/img-SecondPage/manha.jpg"></image>
+        </div>
+        <br />
+        <div id="box-mensagem">
+            Mensagem!
+        </div>
+    </section>
+
+    <script type="module" src="~/js-SecondPage/mensagem.js"></script>
+</body>
+
+</html>
