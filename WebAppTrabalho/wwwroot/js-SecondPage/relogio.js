@@ -10,9 +10,11 @@ export function Relogio() {
 
     if (hora < 10) {
         hora = "0" + hora;
-    } else if (minuto < 10) {
+    }
+    if (minuto < 10) {
         minuto = "0" + minuto;
-    } else if (segundo < 10) {
+    }
+    if (segundo < 10) {
         segundo = "0" + segundo;
     }
 
